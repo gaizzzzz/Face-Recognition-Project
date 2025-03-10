@@ -23,22 +23,22 @@ We will build an app like a command-line interface so that users can interact wi
 - Download dataset: https://www.kaggle.com/datasets/adg1822/7-celebrity-images/code
 
 The structure of this project:
-face_recognizer/
-│
-├── output/
-│
-├── training/
-│   └── ben_affleck/
-│       ├── img_1.jpg
-│       └── img_2.png
-│
-├── validation/
-│   ├── ben_affleck1.jpg
-│   └── michael_jordan1.jpg
-│
-├── detector.py
-├── requirements.txt
-└── unknown.jpg
+face_recognizer/  
+│  
+├── output/  
+│  
+├── training/  
+│   └── ben_affleck/  
+│       ├── img_1.jpg  
+│       └── img_2.png  
+│  
+├── validation/  
+│   ├── ben_affleck1.jpg  
+│   └── michael_jordan1.jpg  
+│  
+├── detector.py  
+├── requirements.txt  
+└── unknown.jpg  
 
 ## Step 2: Load data and Train model
 - Import `face-recognition` module to detect faces in images.
@@ -65,5 +65,5 @@ face_recognizer/
 
 ------------------------------------------------------------------------------------------------------------------
 # References
-[realpython.com](https://realpython.com/face-recognition-with-python/)
-[github.com](https://github.com/sachadee/Dlib)
+- Refer knowledge and code: [realpython.com](https://realpython.com/face-recognition-with-python/)  
+- Install and fix library: [github.com](https://github.com/sachadee/Dlib)
