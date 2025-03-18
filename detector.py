@@ -87,7 +87,6 @@ def _display_face(draw, bounding_box, name):
         fill = TEXT_COLOR,
     )
 
-
 def recognize_faces(
     image_location: str,
     model: str = "hog",
