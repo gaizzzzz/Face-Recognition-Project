@@ -62,6 +62,27 @@ face_recognizer/
     - **--train**: start the training process.
     - **--validate**: start the validation process.
     - **--test**: the option that you’ll probably use the most. Use this along with the -f option to specify the location of an image with unknown faces that you want to identify. Under the hood, this works the same as validation except that you specify the image location yourself.
+------------------------------------------------------------------------------------------------------------------
+# Update Real-time Face Recognition
+## Step 1: Update the environment
+- Update *requirements.txt* file: add *opencv-python* module.
+- Install the new module.
+
+## Step 2: Train model with the given dataset and Load encodings and names of images
+- Train model and save encodings to *output/*.
+- Load encodings and names of images, save them to a dictionary.
+
+## Step 3: Access webcam and Grab frames 
+- Access to webcam of devices (using default webcam).
+- Grab frames with `opencv`.
+- Convert into RGB.
+
+## Step 4: Detect faces in the frame
+- Similar to **Step 2** of detection progress.
+
+## Step 5: Process detected faces and Display bounding box
+- Compare detected face in the frame with faces in dataset using `face_distance`, and get the minimum.
+- Use the location and size of the minimum encoded frame to draw bounding box.
 
 ------------------------------------------------------------------------------------------------------------------
 # References
